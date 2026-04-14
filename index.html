@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sa Sports – Sportkleding in Nederland</title>
+  <meta name="description" content="Sa Sports – Premium sportkleding voor heel Nederland en Europa. T-shirts, schoenen, shorts en broeken." />
+  <meta property="og:title" content="Sa Sports – Sportkleding in Nederland" />
+  <meta property="og:description" content="Premium sportkleding voor heel Nederland en Europa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Sa Sports Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <span class="logo-fallback">SA<span>SPORTS</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="shop.html" data-i18n="nav_shop">Shop</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="nl">NL</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ar">AR</button>
+      </div>
+      <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== CART DRAWER ===== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h2 data-i18n="cart_title">Winkelwagen</h2>
+    <button class="close-cart" id="closeCart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-total">
+      <span data-i18n="cart_total">Totaal</span>
+      <strong id="cartTotal">€0,00</strong>
+    </div>
+    <a href="checkout.html" class="btn-primary full-width" data-i18n="cart_checkout">Afrekenen</a>
+  </div>
+  <div class="cart-empty" id="cartEmpty">
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+    <p data-i18n="cart_empty">Je winkelwagen is leeg</p>
+  </div>
+</aside>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-badge" data-i18n="hero_badge">Nieuw Seizoen 2025</span>
+    <h1 class="hero-title" data-i18n="hero_title">Sportkleding in Nederland</h1>
+    <p class="hero-sub" data-i18n="hero_sub">Hoogwaardige sportkleding voor elke sporter. Snelle levering door heel Europa.</p>
+    <div class="hero-cta">
+      <a href="shop.html" class="btn-primary" data-i18n="hero_cta">Shop Nu</a>
+      <a href="#products" class="btn-ghost" data-i18n="hero_cta2">Bekijk Collectie</a>
+    </div>
+    <div class="hero-badges">
+      <span>✓ <span data-i18n="badge1">Gratis verzending boven €75</span></span>
+      <span>✓ <span data-i18n="badge2">30 dagen retour</span></span>
+      <span>✓ <span data-i18n="badge3">Veilig betalen</span></span>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card floating">
+      <div class="hcard-img" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.2" opacity=".6"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      </div>
+      <p>Premium Kwaliteit</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><span data-i18n="trust1">Levering in heel Europa</span></div>
+    <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg><span data-i18n="trust2">Snelle verzending NL</span></div>
+    <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span data-i18n="trust3">Veilig & Beveiligd</span></div>
+    <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg><span data-i18n="trust4">30 Dagen Retour</span></div>
+  </div>
+</div>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="categories" id="products">
+  <div class="section-header">
+    <h2 data-i18n="cat_title">Shop op Categorie</h2>
+    <p data-i18n="cat_sub">Vind de perfecte uitrusting voor jouw sport</p>
+  </div>
+  <div class="cat-grid">
+    <a href="shop.html?cat=tshirts" class="cat-card" data-cat="tshirts">
+      <div class="cat-img" style="background:linear-gradient(135deg,#667eea,#764ba2)">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.86H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.86l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+      </div>
+      <span data-i18n="cat_tshirts">T-Shirts</span>
+    </a>
+    <a href="shop.html?cat=shoes" class="cat-card" data-cat="shoes">
+      <div class="cat-img" style="background:linear-gradient(135deg,#f093fb,#f5576c)">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M2 18l1-1 1.5.5L7 16l2 1 3-2 4 1.5 3.5-1L22 17v1a2 2 0 01-2 2H4a2 2 0 01-2-2v-1z"/><path d="M4 17l1-5 3-1 2 2 3-3 4 2v5"/></svg>
+      </div>
+      <span data-i18n="cat_shoes">Schoenen</span>
+    </a>
+    <a href="shop.html?cat=shorts" class="cat-card" data-cat="shorts">
+      <div class="cat-img" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M6 2h12l2 8H4L6 2z"/><path d="M4 10v10a2 2 0 002 2h3l1-4 1 4h3a2 2 0 002-2V10"/></svg>
+      </div>
+      <span data-i18n="cat_shorts">Shorts</span>
+    </a>
+    <a href="shop.html?cat=pants" class="cat-card" data-cat="pants">
+      <div class="cat-img" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M6 2h12v5l-2 15h-3l-1-8-1 8H8L6 7V2z"/></svg>
+      </div>
+      <span data-i18n="cat_pants">Broeken</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== FEATURED PRODUCTS ===== -->
+<section class="products-section">
+  <div class="section-header">
+    <h2 data-i18n="feat_title">Uitgelichte Producten</h2>
+    <a href="shop.html" class="see-all" data-i18n="feat_all">Alles bekijken →</a>
+  </div>
+  <div class="products-grid" id="featuredGrid"></div>
+</section>
+
+<!-- ===== BANNER ===== -->
+<section class="promo-banner">
+  <div class="promo-content">
+    <h2 data-i18n="promo_title">Levering in heel Europa 🚚</h2>
+    <p data-i18n="promo_sub">Nederland: 1-2 werkdagen · Europa: 3-5 werkdagen · Gratis boven €75</p>
+    <a href="shop.html" class="btn-white" data-i18n="promo_cta">Shop nu</a>
+  </div>
+</section>
+
+<!-- ===== NEW ARRIVALS ===== -->
+<section class="products-section">
+  <div class="section-header">
+    <h2 data-i18n="new_title">Nieuw Binnen</h2>
+    <a href="shop.html" class="see-all" data-i18n="feat_all">Alles bekijken →</a>
+  </div>
+  <div class="products-grid" id="newGrid"></div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <h2 data-i18n="contact_title">Neem Contact Op</h2>
+      <p data-i18n="contact_sub">Vragen over producten of bestellingen? Wij helpen je graag!</p>
+      <div class="contact-details">
+        <a href="tel:+31685361632" class="contact-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 6.11 2 2 0 015.4 4h2.93a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.91 11.4a16 16 0 006.29 6.29l.86-.86a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 18.92z"/></svg>
+          +31 6 85361632
+        </a>
+        <a href="https://wa.me/31685361632" target="_blank" class="whatsapp-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="" data-i18n-placeholder="form_name" required />
+      <input type="email" placeholder="" data-i18n-placeholder="form_email" required />
+      <textarea rows="4" placeholder="" data-i18n-placeholder="form_message" required></textarea>
+      <button type="submit" class="btn-primary" data-i18n="form_send">Versturen</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Sa Sports" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <span class="logo-fallback small">SA<span>SPORTS</span></span>
+      <p data-i18n="footer_tagline">Premium sportkleding voor elke sporter in Nederland en Europa.</p>
+    </div>
+    <div class="footer-links">
+      <h4 data-i18n="footer_shop">Shop</h4>
+      <a href="shop.html?cat=tshirts" data-i18n="cat_tshirts">T-Shirts</a>
+      <a href="shop.html?cat=shoes" data-i18n="cat_shoes">Schoenen</a>
+      <a href="shop.html?cat=shorts" data-i18n="cat_shorts">Shorts</a>
+      <a href="shop.html?cat=pants" data-i18n="cat_pants">Broeken</a>
+    </div>
+    <div class="footer-links">
+      <h4 data-i18n="footer_info">Informatie</h4>
+      <a href="#" data-i18n="footer_shipping">Verzending</a>
+      <a href="#" data-i18n="footer_returns">Retourneren</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="footer-links">
+      <h4 data-i18n="footer_contact">Contact</h4>
+      <a href="tel:+31685361632">+31 6 85361632</a>
+      <a href="https://wa.me/31685361632">WhatsApp</a>
+      <p class="footer-shipping-note" data-i18n="trust1">Levering in heel Europa</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Sa Sports. <span data-i18n="footer_rights">Alle rechten voorbehouden.</span></p>
+    <p data-i18n="footer_payment">Veilig betalen via Stripe</p>
+  </div>
+</footer>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
