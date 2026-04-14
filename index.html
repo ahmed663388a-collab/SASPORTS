@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="SA Sports - Sportkleding in Europa (Nederland). Levering door heel Europa." />
+  <title>SA SPORTS – Sportkleding Europa | هولندا للملابس الرياضية</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== ANNOUNCEMENT BAR ===== -->
+<div class="announce-bar">
+  <div class="announce-inner">
+    <span class="announce-text nl active" data-lang="nl">🚀 Gratis levering door heel Europa bij bestellingen boven €75 | Snelle levering in 3–5 werkdagen</span>
+    <span class="announce-text en" data-lang="en">🚀 Free delivery across Europe on orders over €75 | Fast delivery in 3–5 business days</span>
+    <span class="announce-text ar rtl" data-lang="ar">🚀 شحن مجاني لجميع أنحاء أوروبا عند الطلب فوق 75€ | توصيل سريع خلال 3-5 أيام</span>
+  </div>
+</div>
+
+<!-- ===== HEADER / NAV ===== -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="header-inner">
+
+      <!-- LOGO -->
+      <a href="#" class="logo-link">
+        <img src="logo.png" alt="SA Sports Logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="logo-fallback" style="display:none">
+          <span class="logo-sa">SA</span><span class="logo-sports">SPORTS</span>
+        </div>
+      </a>
+
+      <!-- NAV DESKTOP -->
+      <nav class="nav-desktop">
+        <a href="#tshirts" class="nav-link"><span class="nl" data-lang="nl">T-Shirts</span><span class="en" data-lang="en">T-Shirts</span><span class="ar rtl" data-lang="ar">تيشرتات</span></a>
+        <a href="#shoes" class="nav-link"><span class="nl" data-lang="nl">Schoenen</span><span class="en" data-lang="en">Shoes</span><span class="ar rtl" data-lang="ar">أحذية</span></a>
+        <a href="#pants" class="nav-link"><span class="nl" data-lang="nl">Broeken</span><span class="en" data-lang="en">Pants</span><span class="ar rtl" data-lang="ar">بناطيل</span></a>
+        <a href="#shorts" class="nav-link"><span class="nl" data-lang="nl">Shorts</span><span class="en" data-lang="en">Shorts</span><span class="ar rtl" data-lang="ar">شورتات</span></a>
+        <a href="#contact" class="nav-link"><span class="nl" data-lang="nl">Contact</span><span class="en" data-lang="en">Contact</span><span class="ar rtl" data-lang="ar">تواصل</span></a>
+      </nav>
+
+      <!-- RIGHT CONTROLS -->
+      <div class="header-right">
+        <!-- Language switcher -->
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="nl">NL</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">عر</button>
+        </div>
+        <!-- Cart -->
+        <button class="cart-btn" id="cartBtn" aria-label="Cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <div class="mobile-lang">
+      <button class="lang-btn active" data-lang="nl">NL</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="ar">عر</button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="#tshirts" class="mobile-nav-link">
+        <span class="nl" data-lang="nl">T-Shirts</span>
+        <span class="en" data-lang="en">T-Shirts</span>
+        <span class="ar rtl" data-lang="ar">تيشرتات</span>
+      </a>
+      <a href="#shoes" class="mobile-nav-link">
+        <span class="nl" data-lang="nl">Schoenen</span>
+        <span class="en" data-lang="en">Shoes</span>
+        <span class="ar rtl" data-lang="ar">أحذية</span>
+      </a>
+      <a href="#pants" class="mobile-nav-link">
+        <span class="nl" data-lang="nl">Broeken</span>
+        <span class="en" data-lang="en">Pants</span>
+        <span class="ar rtl" data-lang="ar">بناطيل</span>
+      </a>
+      <a href="#shorts" class="mobile-nav-link">
+        <span class="nl" data-lang="nl">Shorts</span>
+        <span class="en" data-lang="en">Shorts</span>
+        <span class="ar rtl" data-lang="ar">شورتات</span>
+      </a>
+      <a href="#contact" class="mobile-nav-link">
+        <span class="nl" data-lang="nl">Contact</span>
+        <span class="en" data-lang="en">Contact</span>
+        <span class="ar rtl" data-lang="ar">تواصل</span>
+      </a>
+    </nav>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="hero-pattern"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <span class="nl" data-lang="nl">🇳🇱 Gebaseerd in Nederland</span>
+      <span class="en" data-lang="en">🇳🇱 Based in the Netherlands</span>
+      <span class="ar rtl" data-lang="ar">🇳🇱 مقرنا في هولندا</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="nl" data-lang="nl">Sportkleding<br/>in Europa<br/><em>(Nederland)</em></span>
+      <span class="en" data-lang="en">Sportswear<br/>in Europe<br/><em>(Netherlands)</em></span>
+      <span class="ar rtl" data-lang="ar">ملابس رياضية<br/>في أوروبا<br/><em>(هولندا)</em></span>
+    </h1>
+    <p class="hero-sub">
+      <span class="nl" data-lang="nl">Levering door heel Europa · Topkwaliteit · Snelle verzending</span>
+      <span class="en" data-lang="en">Delivery across all of Europe · Top Quality · Fast Shipping</span>
+      <span class="ar rtl" data-lang="ar">التوصيل لجميع أنحاء أوروبا · جودة عالية · شحن سريع</span>
+    </p>
+    <div class="hero-ctas">
+      <a href="#tshirts" class="btn-primary">
+        <span class="nl" data-lang="nl">Shop Nu</span>
+        <span class="en" data-lang="en">Shop Now</span>
+        <span class="ar rtl" data-lang="ar">تسوق الآن</span>
+      </a>
+      <a href="#contact" class="btn-secondary">
+        <span class="nl" data-lang="nl">Neem Contact Op</span>
+        <span class="en" data-lang="en">Contact Us</span>
+        <span class="ar rtl" data-lang="ar">تواصل معنا</span>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">30+</span>
+        <span class="stat-label nl" data-lang="nl">Landen</span>
+        <span class="stat-label en" data-lang="en">Countries</span>
+        <span class="stat-label ar rtl" data-lang="ar">دولة</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">5K+</span>
+        <span class="stat-label nl" data-lang="nl">Tevreden Klanten</span>
+        <span class="stat-label en" data-lang="en">Happy Customers</span>
+        <span class="stat-label ar rtl" data-lang="ar">عميل سعيد</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label nl" data-lang="nl">Kwaliteitsgarantie</span>
+        <span class="stat-label en" data-lang="en">Quality Guarantee</span>
+        <span class="stat-label ar rtl" data-lang="ar">ضمان الجودة</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-indicator"></div>
+  </div>
+</section>
+
+<!-- ===== CATEGORIES NAV ===== -->
+<section class="cat-nav">
+  <div class="container">
+    <div class="cat-nav-grid">
+      <a href="#tshirts" class="cat-nav-item">
+        <div class="cat-nav-icon">👕</div>
+        <span class="nl" data-lang="nl">T-Shirts</span>
+        <span class="en" data-lang="en">T-Shirts</span>
+        <span class="ar rtl" data-lang="ar">تيشرتات</span>
+      </a>
+      <a href="#shoes" class="cat-nav-item">
+        <div class="cat-nav-icon">👟</div>
+        <span class="nl" data-lang="nl">Schoenen</span>
+        <span class="en" data-lang="en">Shoes</span>
+        <span class="ar rtl" data-lang="ar">أحذية</span>
+      </a>
+      <a href="#pants" class="cat-nav-item">
+        <div class="cat-nav-icon">👖</div>
+        <span class="nl" data-lang="nl">Broeken</span>
+        <span class="en" data-lang="en">Pants</span>
+        <span class="ar rtl" data-lang="ar">بناطيل</span>
+      </a>
+      <a href="#shorts" class="cat-nav-item">
+        <div class="cat-nav-icon">🩳</div>
+        <span class="nl" data-lang="nl">Shorts</span>
+        <span class="en" data-lang="en">Shorts</span>
+        <span class="ar rtl" data-lang="ar">شورتات</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION: T-SHIRTS ===== -->
+<section class="products-section" id="tshirts">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">
+        <span class="nl" data-lang="nl">Collectie</span>
+        <span class="en" data-lang="en">Collection</span>
+        <span class="ar rtl" data-lang="ar">المجموعة</span>
+      </div>
+      <h2 class="section-title">
+        <span class="nl" data-lang="nl">Sport T-Shirts</span>
+        <span class="en" data-lang="en">Sport T-Shirts</span>
+        <span class="ar rtl" data-lang="ar">تيشرتات رياضية</span>
+      </h2>
+      <p class="section-desc">
+        <span class="nl" data-lang="nl">Ademend, licht en ontworpen voor prestaties op elk niveau</span>
+        <span class="en" data-lang="en">Breathable, lightweight and designed for peak performance</span>
+        <span class="ar rtl" data-lang="ar">قابلة للتنفس، خفيفة ومصممة للأداء العالي</span>
+      </p>
+    </div>
+    <div class="products-grid" id="tshirts-grid"></div>
+  </div>
+</section>
+
+<!-- ===== SECTION: SHOES ===== -->
+<section class="products-section alt-bg" id="shoes">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">
+        <span class="nl" data-lang="nl">Collectie</span>
+        <span class="en" data-lang="en">Collection</span>
+        <span class="ar rtl" data-lang="ar">المجموعة</span>
+      </div>
+      <h2 class="section-title">
+        <span class="nl" data-lang="nl">Sportschoenen</span>
+        <span class="en" data-lang="en">Sports Shoes</span>
+        <span class="ar rtl" data-lang="ar">أحذية رياضية</span>
+      </h2>
+      <p class="section-desc">
+        <span class="nl" data-lang="nl">Maximale grip, comfort en stijl voor elke sport</span>
+        <span class="en" data-lang="en">Maximum grip, comfort and style for every sport</span>
+        <span class="ar rtl" data-lang="ar">أقصى قدر من الثبات والراحة والأناقة لكل رياضة</span>
+      </p>
+    </div>
+    <div class="products-grid" id="shoes-grid"></div>
+  </div>
+</section>
+
+<!-- ===== SECTION: PANTS ===== -->
+<section class="products-section" id="pants">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">
+        <span class="nl" data-lang="nl">Collectie</span>
+        <span class="en" data-lang="en">Collection</span>
+        <span class="ar rtl" data-lang="ar">المجموعة</span>
+      </div>
+      <h2 class="section-title">
+        <span class="nl" data-lang="nl">Sportbroeken</span>
+        <span class="en" data-lang="en">Sport Pants</span>
+        <span class="ar rtl" data-lang="ar">بناطيل رياضية</span>
+      </h2>
+      <p class="section-desc">
+        <span class="nl" data-lang="nl">Flexibel, duurzaam en perfect voor training en vrije tijd</span>
+        <span class="en" data-lang="en">Flexible, durable and perfect for training and leisure</span>
+        <span class="ar rtl" data-lang="ar">مرنة ومتينة ومثالية للتدريب والترفيه</span>
+      </p>
+    </div>
+    <div class="products-grid" id="pants-grid"></div>
+  </div>
+</section>
+
+<!-- ===== SECTION: SHORTS ===== -->
+<section class="products-section alt-bg" id="shorts">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">
+        <span class="nl" data-lang="nl">Collectie</span>
+        <span class="en" data-lang="en">Collection</span>
+        <span class="ar rtl" data-lang="ar">المجموعة</span>
+      </div>
+      <h2 class="section-title">
+        <span class="nl" data-lang="nl">Sportshorts</span>
+        <span class="en" data-lang="en">Sport Shorts</span>
+        <span class="ar rtl" data-lang="ar">شورتات رياضية</span>
+      </h2>
+      <p class="section-desc">
+        <span class="nl" data-lang="nl">Luchtig design voor optimale bewegingsvrijheid</span>
+        <span class="en" data-lang="en">Airy design for optimal freedom of movement</span>
+        <span class="ar rtl" data-lang="ar">تصميم هوائي لحرية حركة مثالية</span>
+      </p>
+    </div>
+    <div class="products-grid" id="shorts-grid"></div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="why-us">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="nl" data-lang="nl">Waarom SA Sports?</span>
+        <span class="en" data-lang="en">Why SA Sports?</span>
+        <span class="ar rtl" data-lang="ar">لماذا SA Sports؟</span>
+      </h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🚀</div>
+        <h3 class="nl" data-lang="nl">Snelle Levering</h3>
+        <h3 class="en" data-lang="en">Fast Delivery</h3>
+        <h3 class="ar rtl" data-lang="ar">توصيل سريع</h3>
+        <p class="nl" data-lang="nl">Levering door heel Europa binnen 3–5 werkdagen</p>
+        <p class="en" data-lang="en">Delivery across Europe within 3–5 business days</p>
+        <p class="ar rtl" data-lang="ar">توصيل لجميع أنحاء أوروبا خلال 3-5 أيام عمل</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💎</div>
+        <h3 class="nl" data-lang="nl">Premium Kwaliteit</h3>
+        <h3 class="en" data-lang="en">Premium Quality</h3>
+        <h3 class="ar rtl" data-lang="ar">جودة ممتازة</h3>
+        <p class="nl" data-lang="nl">Topkwaliteit materialen voor ultiem sportcomfort</p>
+        <p class="en" data-lang="en">Top quality materials for ultimate sports comfort</p>
+        <p class="ar rtl" data-lang="ar">مواد عالية الجودة لراحة رياضية قصوى</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🔒</div>
+        <h3 class="nl" data-lang="nl">Veilig Betalen</h3>
+        <h3 class="en" data-lang="en">Secure Payment</h3>
+        <h3 class="ar rtl" data-lang="ar">دفع آمن</h3>
+        <p class="nl" data-lang="nl">iDEAL, Bankoverschrijving & meer betaalmethoden</p>
+        <p class="en" data-lang="en">iDEAL, Bank Transfer & more payment methods</p>
+        <p class="ar rtl" data-lang="ar">iDEAL وتحويل بنكي وطرق دفع متعددة</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🔄</div>
+        <h3 class="nl" data-lang="nl">Eenvoudig Retourneren</h3>
+        <h3 class="en" data-lang="en">Easy Returns</h3>
+        <h3 class="ar rtl" data-lang="ar">إرجاع سهل</h3>
+        <p class="nl" data-lang="nl">30 dagen retourbeleid zonder gedoe</p>
+        <p class="en" data-lang="en">30-day return policy, no hassle</p>
+        <p class="ar rtl" data-lang="ar">سياسة إرجاع 30 يوماً بدون تعقيدات</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌍</div>
+        <h3 class="nl" data-lang="nl">Pan-Europees</h3>
+        <h3 class="en" data-lang="en">Pan-European</h3>
+        <h3 class="ar rtl" data-lang="ar">أوروبا كلها</h3>
+        <p class="nl" data-lang="nl">Wij leveren in meer dan 30 Europese landen</p>
+        <p class="en" data-lang="en">We deliver to more than 30 European countries</p>
+        <p class="ar rtl" data-lang="ar">نوصل لأكثر من 30 دولة أوروبية</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💬</div>
+        <h3 class="nl" data-lang="nl">Klantensupport</h3>
+        <h3 class="en" data-lang="en">Customer Support</h3>
+        <h3 class="ar rtl" data-lang="ar">دعم العملاء</h3>
+        <p class="nl" data-lang="nl">Persoonlijke service via WhatsApp & telefoon</p>
+        <p class="en" data-lang="en">Personal service via WhatsApp & phone</p>
+        <p class="ar rtl" data-lang="ar">خدمة شخصية عبر واتساب والهاتف</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAYMENT SECTION ===== -->
+<section class="payment-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="nl" data-lang="nl">Betaalmethoden</span>
+        <span class="en" data-lang="en">Payment Methods</span>
+        <span class="ar rtl" data-lang="ar">طرق الدفع</span>
+      </h2>
+      <p class="section-desc">
+        <span class="nl" data-lang="nl">Veilig en eenvoudig betalen met uw voorkeursmethode</span>
+        <span class="en" data-lang="en">Pay safely and easily with your preferred method</span>
+        <span class="ar rtl" data-lang="ar">ادفع بأمان وسهولة بطريقتك المفضلة</span>
+      </p>
+    </div>
+    <div class="payment-grid">
+      <div class="payment-card featured">
+        <div class="payment-icon ideal">iDEAL</div>
+        <h3 class="nl" data-lang="nl">iDEAL (NL Bankrekening)</h3>
+        <h3 class="en" data-lang="en">iDEAL (NL Bank Account)</h3>
+        <h3 class="ar rtl" data-lang="ar">iDEAL (حساب بنكي هولندي)</h3>
+        <p class="nl" data-lang="nl">Directe betaling via uw Nederlandse bank</p>
+        <p class="en" data-lang="en">Direct payment through your Dutch bank</p>
+        <p class="ar rtl" data-lang="ar">دفع مباشر عبر بنكك الهولندي</p>
+        <ul class="payment-banks">
+          <li>ABN AMRO</li><li>ING</li><li>Rabobank</li><li>SNS Bank</li>
+          <li>ASN Bank</li><li>Knab</li><li>Triodos</li><li>Bunq</li>
+        </ul>
+      </div>
+      <div class="payment-card">
+        <div class="payment-icon transfer">🏦</div>
+        <h3 class="nl" data-lang="nl">Bankoverschrijving</h3>
+        <h3 class="en" data-lang="en">Bank Transfer</h3>
+        <h3 class="ar rtl" data-lang="ar">تحويل بنكي</h3>
+        <p class="nl" data-lang="nl">SEPA-overboeking vanuit heel Europa</p>
+        <p class="en" data-lang="en">SEPA transfer from anywhere in Europe</p>
+        <p class="ar rtl" data-lang="ar">تحويل SEPA من أي مكان في أوروبا</p>
+        <div class="bank-details">
+          <div class="bank-detail-row">
+            <span class="bd-label">Bank:</span>
+            <span class="bd-value">SA Sports B.V.</span>
+          </div>
+          <div class="bank-detail-row">
+            <span class="bd-label">IBAN:</span>
+            <span class="bd-value">NL00 BANK 0000 0000 00</span>
+          </div>
+          <div class="bank-detail-row">
+            <span class="bd-label">BIC:</span>
+            <span class="bd-value">ABNANL2A</span>
+          </div>
+        </div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-icon whatsapp">📱</div>
+        <h3 class="nl" data-lang="nl">WhatsApp Betaling</h3>
+        <h3 class="en" data-lang="en">WhatsApp Payment</h3>
+        <h3 class="ar rtl" data-lang="ar">الدفع عبر واتساب</h3>
+        <p class="nl" data-lang="nl">Neem contact op en wij regelen de betaling voor u</p>
+        <p class="en" data-lang="en">Contact us and we will arrange payment for you</p>
+        <p class="ar rtl" data-lang="ar">تواصل معنا وسنرتب الدفع لك</p>
+        <a href="https://wa.me/31685361632" class="whatsapp-btn" target="_blank">
+          <span class="nl" data-lang="nl">WhatsApp: +31 6 85361632</span>
+          <span class="en" data-lang="en">WhatsApp: +31 6 85361632</span>
+          <span class="ar rtl" data-lang="ar">واتساب: 31685361632+</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DELIVERY MAP ===== -->
+<section class="delivery-section">
+  <div class="container">
+    <div class="delivery-inner">
+      <div class="delivery-text">
+        <div class="section-tag">
+          <span class="nl" data-lang="nl">Verzending</span>
+          <span class="en" data-lang="en">Shipping</span>
+          <span class="ar rtl" data-lang="ar">الشحن</span>
+        </div>
+        <h2 class="section-title left">
+          <span class="nl" data-lang="nl">Levering door<br/>heel Europa</span>
+          <span class="en" data-lang="en">Delivery Across<br/>All of Europe</span>
+          <span class="ar rtl" data-lang="ar">توصيل لجميع<br/>أنحاء أوروبا</span>
+        </h2>
+        <div class="delivery-items">
+          <div class="delivery-item">
+            <span class="d-icon">📦</span>
+            <div>
+              <strong class="nl" data-lang="nl">Standaard Levering</strong>
+              <strong class="en" data-lang="en">Standard Delivery</strong>
+              <strong class="ar rtl" data-lang="ar">توصيل عادي</strong>
+              <p class="nl" data-lang="nl">3–5 werkdagen · €4,99 (gratis boven €75)</p>
+              <p class="en" data-lang="en">3–5 business days · €4.99 (free over €75)</p>
+              <p class="ar rtl" data-lang="ar">3-5 أيام عمل · 4.99€ (مجاني فوق 75€)</p>
+            </div>
+          </div>
+          <div class="delivery-item">
+            <span class="d-icon">⚡</span>
+            <div>
+              <strong class="nl" data-lang="nl">Expreslevering</strong>
+              <strong class="en" data-lang="en">Express Delivery</strong>
+              <strong class="ar rtl" data-lang="ar">توصيل سريع</strong>
+              <p class="nl" data-lang="nl">1–2 werkdagen · €9,99</p>
+              <p class="en" data-lang="en">1–2 business days · €9.99</p>
+              <p class="ar rtl" data-lang="ar">1-2 أيام عمل · 9.99€</p>
+            </div>
+          </div>
+          <div class="delivery-item">
+            <span class="d-icon">🇪🇺</span>
+            <div>
+              <strong class="nl" data-lang="nl">Pan-Europees</strong>
+              <strong class="en" data-lang="en">Pan-European</strong>
+              <strong class="ar rtl" data-lang="ar">أوروبا كاملة</strong>
+              <p class="nl" data-lang="nl">30+ landen gedekt</p>
+              <p class="en" data-lang="en">30+ countries covered</p>
+              <p class="ar rtl" data-lang="ar">أكثر من 30 دولة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delivery-visual">
+        <div class="europe-map">
+          <svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg" class="map-svg">
+            <defs>
+              <radialGradient id="mapGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#e8f4fd"/>
+                <stop offset="100%" stop-color="#c8e6f9"/>
+              </radialGradient>
+            </defs>
+            <!-- Simplified Europe shape -->
+            <ellipse cx="200" cy="175" rx="180" ry="155" fill="url(#mapGrad)" opacity="0.3" stroke="#3498db" stroke-width="1" stroke-dasharray="5,3"/>
+            <!-- Country blobs -->
+            <circle cx="195" cy="120" r="28" fill="#3498db" opacity="0.15" stroke="#3498db" stroke-width="1.5"/>
+            <circle cx="160" cy="150" r="22" fill="#3498db" opacity="0.12" stroke="#3498db" stroke-width="1"/>
+            <circle cx="225" cy="145" r="18" fill="#3498db" opacity="0.12" stroke="#3498db" stroke-width="1"/>
+            <circle cx="185" cy="175" r="20" fill="#3498db" opacity="0.1" stroke="#3498db" stroke-width="1"/>
+            <circle cx="240" cy="165" r="16" fill="#3498db" opacity="0.1"/>
+            <circle cx="155" cy="185" r="25" fill="#3498db" opacity="0.1"/>
+            <circle cx="210" cy="200" r="22" fill="#3498db" opacity="0.08"/>
+            <!-- NL Star -->
+            <circle cx="195" cy="125" r="10" fill="#FF6B35" opacity="0.9"/>
+            <text x="195" y="129" text-anchor="middle" font-size="10" fill="white" font-weight="bold">NL</text>
+            <!-- Delivery rays -->
+            <line x1="195" y1="125" x2="140" y2="105" stroke="#FF6B35" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+            <line x1="195" y1="125" x2="250" y2="110" stroke="#FF6B35" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+            <line x1="195" y1="125" x2="270" y2="160" stroke="#FF6B35" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+            <line x1="195" y1="125" x2="240" y2="200" stroke="#FF6B35" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+            <line x1="195" y1="125" x2="155" y2="195" stroke="#FF6B35" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+            <line x1="195" y1="125" x2="130" y2="160" stroke="#FF6B35" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+            <!-- City dots -->
+            <circle cx="140" cy="105" r="4" fill="#2ecc71"/>
+            <circle cx="250" cy="110" r="4" fill="#2ecc71"/>
+            <circle cx="270" cy="160" r="4" fill="#2ecc71"/>
+            <circle cx="240" cy="200" r="4" fill="#2ecc71"/>
+            <circle cx="155" cy="195" r="4" fill="#2ecc71"/>
+            <circle cx="130" cy="160" r="4" fill="#2ecc71"/>
+            <circle cx="175" cy="230" r="4" fill="#2ecc71"/>
+            <circle cx="210" cy="235" r="4" fill="#2ecc71"/>
+            <circle cx="280" cy="130" r="4" fill="#2ecc71"/>
+          </svg>
+          <div class="map-label">
+            <span class="nl" data-lang="nl">Gratis levering door heel Europa!</span>
+            <span class="en" data-lang="en">Free delivery all across Europe!</span>
+            <span class="ar rtl" data-lang="ar">شحن مجاني لجميع أنحاء أوروبا!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner">
+      <h2 class="nl" data-lang="nl">Ontvang Exclusieve Aanbiedingen</h2>
+      <h2 class="en" data-lang="en">Get Exclusive Offers</h2>
+      <h2 class="ar rtl" data-lang="ar">احصل على عروض حصرية</h2>
+      <p class="nl" data-lang="nl">Schrijf u in voor onze nieuwsbrief en ontvang 10% korting op uw eerste bestelling</p>
+      <p class="en" data-lang="en">Subscribe to our newsletter and get 10% off your first order</p>
+      <p class="ar rtl" data-lang="ar">اشترك في نشرتنا الإخبارية واحصل على خصم 10% على طلبك الأول</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" id="emailInput" placeholder="Email..." class="newsletter-input" required />
+        <button type="submit" class="newsletter-btn">
+          <span class="nl" data-lang="nl">Inschrijven</span>
+          <span class="en" data-lang="en">Subscribe</span>
+          <span class="ar rtl" data-lang="ar">اشترك</span>
+        </button>
+      </form>
+      <div class="newsletter-success" id="newsletterSuccess" style="display:none">
+        <span class="nl" data-lang="nl">✅ Bedankt! U ontvangt snel uw kortingscode.</span>
+        <span class="en" data-lang="en">✅ Thank you! You'll receive your discount code soon.</span>
+        <span class="ar rtl" data-lang="ar">✅ شكراً! ستصلك كود الخصم قريباً.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="nl" data-lang="nl">Neem Contact Op</span>
+        <span class="en" data-lang="en">Contact Us</span>
+        <span class="ar rtl" data-lang="ar">تواصل معنا</span>
+      </h2>
+      <p class="section-desc">
+        <span class="nl" data-lang="nl">Wij staan altijd voor u klaar</span>
+        <span class="en" data-lang="en">We are always here for you</span>
+        <span class="ar rtl" data-lang="ar">نحن دائماً هنا من أجلك</span>
+      </p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">📱</div>
+        <h3 class="nl" data-lang="nl">WhatsApp & Telefoon</h3>
+        <h3 class="en" data-lang="en">WhatsApp & Phone</h3>
+        <h3 class="ar rtl" data-lang="ar">واتساب وهاتف</h3>
+        <a href="https://wa.me/31685361632" class="contact-link" target="_blank">+31 6 85361632</a>
+        <p class="nl" data-lang="nl">Ma–Za: 09:00 – 21:00</p>
+        <p class="en" data-lang="en">Mon–Sat: 09:00 – 21:00</p>
+        <p class="ar rtl" data-lang="ar">الاثنين–السبت: 09:00 – 21:00</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <h3 class="nl" data-lang="nl">E-mail</h3>
+        <h3 class="en" data-lang="en">Email</h3>
+        <h3 class="ar rtl" data-lang="ar">البريد الإلكتروني</h3>
+        <a href="mailto:info@sasports.nl" class="contact-link">info@sasports.nl</a>
+        <p class="nl" data-lang="nl">Reactie binnen 24 uur</p>
+        <p class="en" data-lang="en">Response within 24 hours</p>
+        <p class="ar rtl" data-lang="ar">رد خلال 24 ساعة</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h3 class="nl" data-lang="nl">Locatie</h3>
+        <h3 class="en" data-lang="en">Location</h3>
+        <h3 class="ar rtl" data-lang="ar">الموقع</h3>
+        <p class="contact-link">Nederland 🇳🇱</p>
+        <p class="nl" data-lang="nl">Levering naar heel Europa</p>
+        <p class="en" data-lang="en">Delivery to all of Europe</p>
+        <p class="ar rtl" data-lang="ar">توصيل لجميع أنحاء أوروبا</p>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form-wrap">
+      <h3 class="form-title">
+        <span class="nl" data-lang="nl">Stuur ons een bericht</span>
+        <span class="en" data-lang="en">Send us a message</span>
+        <span class="ar rtl" data-lang="ar">أرسل لنا رسالة</span>
+      </h3>
+      <div class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="nl" data-lang="nl">Naam</label>
+            <label class="en" data-lang="en">Name</label>
+            <label class="ar rtl" data-lang="ar">الاسم</label>
+            <input type="text" id="contactName" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label class="nl" data-lang="nl">E-mail</label>
+            <label class="en" data-lang="en">Email</label>
+            <label class="ar rtl" data-lang="ar">البريد الإلكتروني</label>
+            <input type="email" id="contactEmail" class="form-input" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="nl" data-lang="nl">Onderwerp</label>
+          <label class="en" data-lang="en">Subject</label>
+          <label class="ar rtl" data-lang="ar">الموضوع</label>
+          <input type="text" id="contactSubject" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label class="nl" data-lang="nl">Bericht</label>
+          <label class="en" data-lang="en">Message</label>
+          <label class="ar rtl" data-lang="ar">الرسالة</label>
+          <textarea id="contactMessage" class="form-textarea" rows="5"></textarea>
+        </div>
+        <button type="button" class="btn-primary full" id="sendMsgBtn">
+          <span class="nl" data-lang="nl">Verstuur Bericht</span>
+          <span class="en" data-lang="en">Send Message</span>
+          <span class="ar rtl" data-lang="ar">إرسال الرسالة</span>
+        </button>
+        <div class="form-success" id="formSuccess" style="display:none">
+          <span class="nl" data-lang="nl">✅ Uw bericht is verzonden! We nemen snel contact met u op.</span>
+          <span class="en" data-lang="en">✅ Your message has been sent! We'll contact you soon.</span>
+          <span class="ar rtl" data-lang="ar">✅ تم إرسال رسالتك! سنتواصل معك قريباً.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo.png" alt="SA Sports" class="footer-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <div class="footer-logo-text" style="display:none">SA SPORTS</div>
+        <p class="footer-tagline nl" data-lang="nl">Sportkleding in Europa (Nederland)<br/>Levering naar heel Europa</p>
+        <p class="footer-tagline en" data-lang="en">Sportswear in Europe (Netherlands)<br/>Delivery across all of Europe</p>
+        <p class="footer-tagline ar rtl" data-lang="ar">ملابس رياضية في أوروبا (هولندا)<br/>التوصيل لجميع أنحاء أوروبا</p>
+        <div class="footer-social">
+          <a href="https://wa.me/31685361632" class="social-link" target="_blank" title="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="mailto:info@sasports.nl" class="social-link" title="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="nl" data-lang="nl">Categorieën</h4>
+        <h4 class="en" data-lang="en">Categories</h4>
+        <h4 class="ar rtl" data-lang="ar">الفئات</h4>
+        <ul>
+          <li><a href="#tshirts"><span class="nl" data-lang="nl">Sport T-Shirts</span><span class="en" data-lang="en">Sport T-Shirts</span><span class="ar rtl" data-lang="ar">تيشرتات رياضية</span></a></li>
+          <li><a href="#shoes"><span class="nl" data-lang="nl">Sportschoenen</span><span class="en" data-lang="en">Sports Shoes</span><span class="ar rtl" data-lang="ar">أحذية رياضية</span></a></li>
+          <li><a href="#pants"><span class="nl" data-lang="nl">Sportbroeken</span><span class="en" data-lang="en">Sport Pants</span><span class="ar rtl" data-lang="ar">بناطيل رياضية</span></a></li>
+          <li><a href="#shorts"><span class="nl" data-lang="nl">Sportshorts</span><span class="en" data-lang="en">Sport Shorts</span><span class="ar rtl" data-lang="ar">شورتات رياضية</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="nl" data-lang="nl">Service</h4>
+        <h4 class="en" data-lang="en">Service</h4>
+        <h4 class="ar rtl" data-lang="ar">الخدمة</h4>
+        <ul>
+          <li><a href="#"><span class="nl" data-lang="nl">Retourneren</span><span class="en" data-lang="en">Returns</span><span class="ar rtl" data-lang="ar">الإرجاع</span></a></li>
+          <li><a href="#"><span class="nl" data-lang="nl">Maattabel</span><span class="en" data-lang="en">Size Guide</span><span class="ar rtl" data-lang="ar">جدول المقاسات</span></a></li>
+          <li><a href="#contact"><span class="nl" data-lang="nl">Contact</span><span class="en" data-lang="en">Contact</span><span class="ar rtl" data-lang="ar">تواصل</span></a></li>
+          <li><a href="#"><span class="nl" data-lang="nl">Levering</span><span class="en" data-lang="en">Delivery</span><span class="ar rtl" data-lang="ar">التوصيل</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="nl" data-lang="nl">Betaalmethoden</h4>
+        <h4 class="en" data-lang="en">Payment</h4>
+        <h4 class="ar rtl" data-lang="ar">الدفع</h4>
+        <div class="footer-payments">
+          <span class="fp-badge">iDEAL</span>
+          <span class="fp-badge">SEPA</span>
+          <span class="fp-badge">WhatsApp</span>
+          <span class="fp-badge">Bank Transfer</span>
+        </div>
+        <div class="footer-trust">
+          <span class="trust-badge">🔒 SSL Secure</span>
+          <span class="trust-badge">✅ Verified</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="nl" data-lang="nl">© 2026 SA Sports – Alle rechten voorbehouden | KvK: Nederland</p>
+      <p class="en" data-lang="en">© 2026 SA Sports – All rights reserved | Chamber of Commerce: Netherlands</p>
+      <p class="ar rtl" data-lang="ar">© 2026 SA Sports – جميع الحقوق محفوظة | هولندا</p>
+      <div class="footer-links">
+        <a href="#" class="nl" data-lang="nl">Privacybeleid</a>
+        <a href="#" class="en" data-lang="en">Privacy Policy</a>
+        <a href="#" class="ar rtl" data-lang="ar">سياسة الخصوصية</a>
+        <span class="sep">·</span>
+        <a href="#" class="nl" data-lang="nl">Algemene Voorwaarden</a>
+        <a href="#" class="en" data-lang="en">Terms & Conditions</a>
+        <a href="#" class="ar rtl" data-lang="ar">الشروط والأحكام</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== CART SIDEBAR ===== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3 class="nl" data-lang="nl">Winkelwagen</h3>
+    <h3 class="en" data-lang="en">Shopping Cart</h3>
+    <h3 class="ar rtl" data-lang="ar">عربة التسوق</h3>
+    <button class="cart-close" id="cartClose">✕</button>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty" id="cartEmpty">
+      <div class="cart-empty-icon">🛒</div>
+      <p class="nl" data-lang="nl">Uw winkelwagen is leeg</p>
+      <p class="en" data-lang="en">Your cart is empty</p>
+      <p class="ar rtl" data-lang="ar">عربة التسوق فارغة</p>
+    </div>
+    <div id="cartItems"></div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-total">
+      <span class="nl" data-lang="nl">Totaal:</span>
+      <span class="en" data-lang="en">Total:</span>
+      <span class="ar rtl" data-lang="ar">الإجمالي:</span>
+      <span class="total-amount" id="totalAmount">€0.00</span>
+    </div>
+    <button class="btn-primary full" id="checkoutBtn">
+      <span class="nl" data-lang="nl">Afrekenen</span>
+      <span class="en" data-lang="en">Checkout</span>
+      <span class="ar rtl" data-lang="ar">الدفع</span>
+    </button>
+  </div>
+</aside>
+
+<!-- ===== CHECKOUT MODAL ===== -->
+<div class="modal-overlay" id="checkoutModal" style="display:none">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 class="nl" data-lang="nl">Afrekenen</h3>
+      <h3 class="en" data-lang="en">Checkout</h3>
+      <h3 class="ar rtl" data-lang="ar">إتمام الطلب</h3>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="checkout-steps">
+        <div class="checkout-step active" data-step="1">
+          <span class="nl" data-lang="nl">Gegevens</span>
+          <span class="en" data-lang="en">Details</span>
+          <span class="ar rtl" data-lang="ar">البيانات</span>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="checkout-step" data-step="2">
+          <span class="nl" data-lang="nl">Betaling</span>
+          <span class="en" data-lang="en">Payment</span>
+          <span class="ar rtl" data-lang="ar">الدفع</span>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="checkout-step" data-step="3">
+          <span class="nl" data-lang="nl">Bevestiging</span>
+          <span class="en" data-lang="en">Confirm</span>
+          <span class="ar rtl" data-lang="ar">التأكيد</span>
+        </div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="step-content" id="step1">
+        <div class="form-group">
+          <label class="nl" data-lang="nl">Volledige naam *</label>
+          <label class="en" data-lang="en">Full Name *</label>
+          <label class="ar rtl" data-lang="ar">الاسم الكامل *</label>
+          <input type="text" id="chkName" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label class="nl" data-lang="nl">E-mailadres *</label>
+          <label class="en" data-lang="en">Email Address *</label>
+          <label class="ar rtl" data-lang="ar">البريد الإلكتروني *</label>
+          <input type="email" id="chkEmail" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label class="nl" data-lang="nl">Telefoonnummer</label>
+          <label class="en" data-lang="en">Phone Number</label>
+          <label class="ar rtl" data-lang="ar">رقم الهاتف</label>
+          <input type="tel" id="chkPhone" class="form-input" placeholder="+31 6..." />
+        </div>
+        <div class="form-group">
+          <label class="nl" data-lang="nl">Afleveradres *</label>
+          <label class="en" data-lang="en">Delivery Address *</label>
+          <label class="ar rtl" data-lang="ar">عنوان التوصيل *</label>
+          <input type="text" id="chkAddress" class="form-input" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="nl" data-lang="nl">Stad *</label>
+            <label class="en" data-lang="en">City *</label>
+            <label class="ar rtl" data-lang="ar">المدينة *</label>
+            <input type="text" id="chkCity" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label class="nl" data-lang="nl">Land *</label>
+            <label class="en" data-lang="en">Country *</label>
+            <label class="ar rtl" data-lang="ar">الدولة *</label>
+            <select id="chkCountry" class="form-input">
+              <option value="NL">Nederland</option>
+              <option value="BE">België</option>
+              <option value="DE">Deutschland</option>
+              <option value="FR">France</option>
+              <option value="GB">United Kingdom</option>
+              <option value="ES">España</option>
+              <option value="IT">Italia</option>
+              <option value="PL">Polska</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn-primary full" onclick="nextStep(2)">
+          <span class="nl" data-lang="nl">Volgende → Betaling</span>
+          <span class="en" data-lang="en">Next → Payment</span>
+          <span class="ar rtl" data-lang="ar">التالي → الدفع</span>
+        </button>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-content" id="step2" style="display:none">
+        <div class="payment-methods">
+          <label class="pm-option" id="pm-ideal">
+            <input type="radio" name="payment" value="ideal" checked />
+            <div class="pm-content">
+              <span class="pm-logo ideal-logo">iDEAL</span>
+              <div>
+                <strong>iDEAL</strong>
+                <p class="nl" data-lang="nl">Betaal direct via uw bank</p>
+                <p class="en" data-lang="en">Pay directly via your bank</p>
+                <p class="ar rtl" data-lang="ar">ادفع مباشرة عبر بنكك</p>
+              </div>
+            </div>
+          </label>
+          <label class="pm-option">
+            <input type="radio" name="payment" value="bank" />
+            <div class="pm-content">
+              <span class="pm-logo">🏦</span>
+              <div>
+                <strong class="nl" data-lang="nl">Bankoverschrijving</strong>
+                <strong class="en" data-lang="en">Bank Transfer</strong>
+                <strong class="ar rtl" data-lang="ar">تحويل بنكي</strong>
+                <p class="nl" data-lang="nl">SEPA overboeking</p>
+                <p class="en" data-lang="en">SEPA transfer</p>
+                <p class="ar rtl" data-lang="ar">تحويل SEPA</p>
+              </div>
+            </div>
+          </label>
+          <label class="pm-option">
+            <input type="radio" name="payment" value="whatsapp" />
+            <div class="pm-content">
+              <span class="pm-logo">📱</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <p class="nl" data-lang="nl">Betaling via WhatsApp regelen</p>
+                <p class="en" data-lang="en">Arrange payment via WhatsApp</p>
+                <p class="ar rtl" data-lang="ar">ترتيب الدفع عبر واتساب</p>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="checkout-summary">
+          <h4 class="nl" data-lang="nl">Besteloverzicht</h4>
+          <h4 class="en" data-lang="en">Order Summary</h4>
+          <h4 class="ar rtl" data-lang="ar">ملخص الطلب</h4>
+          <div id="checkoutSummary"></div>
+          <div class="summary-total">
+            <strong class="nl" data-lang="nl">Totaal:</strong>
+            <strong class="en" data-lang="en">Total:</strong>
+            <strong class="ar rtl" data-lang="ar">الإجمالي:</strong>
+            <strong id="summaryTotal">€0.00</strong>
+          </div>
+        </div>
+        <div class="btn-row">
+          <button class="btn-secondary" onclick="nextStep(1)">
+            <span class="nl" data-lang="nl">← Terug</span>
+            <span class="en" data-lang="en">← Back</span>
+            <span class="ar rtl" data-lang="ar">→ رجوع</span>
+          </button>
+          <button class="btn-primary" onclick="nextStep(3)">
+            <span class="nl" data-lang="nl">Bestelling Plaatsen</span>
+            <span class="en" data-lang="en">Place Order</span>
+            <span class="ar rtl" data-lang="ar">تأكيد الطلب</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-content" id="step3" style="display:none">
+        <div class="order-success">
+          <div class="success-icon">✅</div>
+          <h3 class="nl" data-lang="nl">Bestelling Bevestigd!</h3>
+          <h3 class="en" data-lang="en">Order Confirmed!</h3>
+          <h3 class="ar rtl" data-lang="ar">تم تأكيد الطلب!</h3>
+          <p class="nl" data-lang="nl">Bedankt voor uw bestelling. U ontvangt een bevestiging per e-mail. Neem contact op via WhatsApp voor vragen.</p>
+          <p class="en" data-lang="en">Thank you for your order. You will receive a confirmation email. Contact us via WhatsApp for any questions.</p>
+          <p class="ar rtl" data-lang="ar">شكراً لطلبك. ستصلك رسالة تأكيد عبر البريد الإلكتروني. تواصل معنا عبر واتساب لأي استفسار.</p>
+          <a href="https://wa.me/31685361632" class="whatsapp-btn" target="_blank">WhatsApp: +31 6 85361632</a>
+          <button class="btn-secondary" id="closeOrderBtn">
+            <span class="nl" data-lang="nl">Sluiten</span>
+            <span class="en" data-lang="en">Close</span>
+            <span class="ar rtl" data-lang="ar">إغلاق</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PRODUCT MODAL ===== -->
+<div class="modal-overlay" id="productModal" style="display:none">
+  <div class="modal product-modal">
+    <button class="modal-close" id="productModalClose">✕</button>
+    <div class="product-modal-inner" id="productModalInner"></div>
+  </div>
+</div>
+
+<!-- ===== BACK TO TOP ===== -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
